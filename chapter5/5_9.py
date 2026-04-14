@@ -56,7 +56,7 @@ print(converge_speed,'번째 에피소드에서 수렴했습니다.')
 pickle.dump(Q,open('f5-9.pkl','wb'))
 env.close()
 
-plt.figure(figsize(16,5))
+plt.figure(figsize=(16,5))
 plt.plot(range(1,len(epi_length)+1),epi_length)
 smooth=np.convolve(epi_length,10*[0.1],mode='valid')
 plt.plot(range(1,len(smooth)+1),smooth)
