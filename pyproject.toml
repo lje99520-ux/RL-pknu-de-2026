@@ -1,0 +1,22 @@
+[project]
+name = "rl-pknu-de-2026"
+version = "0.1.0"
+description = "국립부경대학교 2026 데이터공학과 석사 과정 강화 학습 코드 레포지토리"
+requires-python = "==3.11.*"
+
+dependencies = [
+    "gymnasium[all]>=1.0.0",
+    "numpy>=1.26.0",
+    "matplotlib>=3.8.0",
+    "tensorflow-macos>=2.16.0; sys_platform == 'darwin'",
+    "tensorflow-metal>=1.1.0; sys_platform == 'darwin'",
+    "tensorflow>=2.16.0; sys_platform != 'darwin'",
+    "opencv-python-headless>=4.9.0",
+    "ipykernel>=6.29.0",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "jupyter>=1.0.0",
+    "black>=24.0.0",
+]
